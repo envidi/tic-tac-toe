@@ -1,0 +1,55 @@
+#players{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#players li{
+  list-style: none;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+#game-container{
+  width: 500px;
+  height: 600px;
+  background-color: rgb(211, 211, 56);
+}
+.edit{
+  margin-left: 10px;
+}
+.container-gameBoard{
+  display: grid;
+  width: 100%;
+  
+  gap: 10px;
+  background-color: red;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.container-gameBoard>.squares{
+  grid-template-columns: repeat(3,1fr);
+  display: grid;
+  gap: 10px;
+  background-color: red;
+}
+.container-gameBoard>.squares>.squareItem{
+  height: 100px;
+  background-color: rgb(255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.player{
+  padding: 5px 10px;
+}
+.active{
+  border:1px solid red;
+}
+.squareItem:disabled{
+  border: none;
+  color: black;
+}
